@@ -28,5 +28,13 @@
     "jshint-stylish": "^2.2.1",
     "wiredep": "^4.0.0"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karthikanthony/dll-demo-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/karthikanthony/dll-demo-app/issues"
+  },
+  "homepage": "https://github.com/karthikanthony/dll-demo-app#readme"
 }
