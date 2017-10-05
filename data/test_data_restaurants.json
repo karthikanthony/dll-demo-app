@@ -1,0 +1,103 @@
+﻿[
+    {
+        "name": "Asuka",
+        "location": {
+            "address1": "1502 W Chester Pike",
+            "address2": "",
+            "address3": "",
+            "city": "West Chester",
+            "zip_code": "19382",
+            "country": "US",
+            "state": "PA",
+            "display_address": [
+                "1502 W Chester Pike",
+                "West Chester, PA 19382"
+            ]
+        },
+        "zip": "19382",
+        "rating": 4.5,
+        "price": "$$",
+        "url": "https://www.yelp.com/biz/asuka-west-chester?adjust_creative=uHab1x2ltiv-YuDKEdMgzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=uHab1x2ltiv-YuDKEdMgzw"
+    },
+    {
+        "name": "China Palace",
+        "location": {
+            "address1": "1251 W Chester Pike",
+            "address2": "",
+            "address3": "",
+            "city": "West Chester",
+            "zip_code": "19382",
+            "country": "US",
+            "state": "PA",
+            "display_address": [
+                "1251 W Chester Pike",
+                "West Chester, PA 19382"
+            ]
+        },
+        "zip": "19382",
+        "rating": 4,
+        "price": "$$",
+        "url": "https://www.yelp.com/biz/china-palace-west-chester?adjust_creative=uHab1x2ltiv-YuDKEdMgzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=uHab1x2ltiv-YuDKEdMgzw"
+    },
+    {
+        "name": "Tsunami",
+        "location": {
+            "address1": "10 W Market St",
+            "address2": "",
+            "address3": "",
+            "city": "West Chester",
+            "zip_code": "19382",
+            "country": "US",
+            "state": "PA",
+            "display_address": [
+                "10 W Market St",
+                "West Chester, PA 19382"
+            ]
+        },
+        "zip": "19382",
+        "rating": 4.5,
+        "price": "$$",
+        "url": "https://www.yelp.com/biz/tsunami-west-chester?adjust_creative=uHab1x2ltiv-YuDKEdMgzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=uHab1x2ltiv-YuDKEdMgzw"
+    },
+    {
+        "name": "Oriental Pearl Restaurant",
+        "location": {
+            "address1": "1550 Paoli Pike",
+            "address2": "",
+            "address3": "",
+            "city": "West Chester",
+            "zip_code": "19380",
+            "country": "US",
+            "state": "PA",
+            "display_address": [
+                "1550 Paoli Pike",
+                "West Chester, PA 19380"
+            ]
+        },
+        "zip": "19380",
+        "rating": 4,
+        "price": "$$",
+        "url": "https://www.yelp.com/biz/oriental-pearl-restaurant-west-chester?adjust_creative=uHab1x2ltiv-YuDKEdMgzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=uHab1x2ltiv-YuDKEdMgzw"
+    },
+    {
+        "name": "Hong Kong Restaurant",
+        "location": {
+            "address1": "33 Marchwood Rd",
+            "address2": "",
+            "address3": "Marchwood Shopping Center",
+            "city": "Exton",
+            "zip_code": "19341",
+            "country": "US",
+            "state": "PA",
+            "display_address": [
+                "33 Marchwood Rd",
+                "Marchwood Shopping Center",
+                "Exton, PA 19341"
+            ]
+        },
+        "zip": "19341",
+        "rating": 4,
+        "price": "$",
+        "url": "https://www.yelp.com/biz/hong-kong-restaurant-exton?adjust_creative=uHab1x2ltiv-YuDKEdMgzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=uHab1x2ltiv-YuDKEdMgzw"
+    }
+]

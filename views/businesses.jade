@@ -1,0 +1,48 @@
+﻿extends layout
+block weatherContent
+                .col-sm-12 Location: #{weather.location}
+                .col-sm-12 Weather: #{weather.weather}
+                .col-sm-12 Temp: #{weather.temp}
+block content
+    .container
+      .row
+        .col-md-12
+          .panel
+            .panel-body
+              h4 Here are the businesses that match your search criteria 
+                - each b in businesses 
+                  .row
+                    br
+                    .col-md-2.col-sm-3.text-center 
+                        a.story-title(href='#')
+                        img.img-circle(alt='', src='http://sm.pcmag.com/pcmag_uk/guide/t/the-best-s/the-best-small-business-accounting-software-of-2017_97qm.jpg', style='width:100px;height:100px')            
+                    .col-md-10.col-sm-9
+                        h3=b.name 
+                        .row
+                            .col-xs-9
+                                p  #{b.location.address1} 
+                                    p #{b.location.city} 
+                                        
+                                h4.text-muted Restaurants Near by
+                                .dropdown
+                                    a.btn.btn-primary.dropdown-toggle(href="#", data-toggle='dropdown') Restaurant Type
+                                    span.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a(href='/restaurants?location=#{b.zip}&type=chinese&from=#{b.location.address1} #{b.zip}&name=#{b.name}') Chinese
+                                        li
+                                            a(href='/restaurants?location=#{b.zip}&type=japanese&from=#{b.location.address1} #{b.zip}&name=#{b.name}') Japanese
+                                        li
+                                            a(href='/restaurants?location=#{b.zip}&type=italian&from=#{b.location.address1} #{b.zip}&name=#{b.name}') Italian
+                                        li
+                                            a(href='/restaurants?location=#{b.zip}&type=thai&from=#{b.location.address1} #{b.zip}&name=#{b.name}') Thai
+                                        li
+                                            a(href='/restaurants?location=#{b.zip}&type=american&from=#{b.location.address1} #{b.zip}&name=#{b.name}') American
+                                        li
+                                            a(href='/restaurants?location=#{b.zip}&type=steak&from=#{b.location.address1} #{b.zip}&name=#{b.name}') Steak
+                                h4
+                                    medium.text-muted(style="font-family:courier,'new courier';") Zip: #{b.zip}  &bull; 
+                                        a.text-muted(href='#') Rating: #{b.rating} 
+                                        a(href="#{b.url}", target='_blank')
+                                            span.label.label-default Yelp Info
+                   hr

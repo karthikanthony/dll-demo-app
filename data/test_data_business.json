@@ -1,0 +1,97 @@
+﻿[
+    {
+        "name": "Scott Honda Of West Chester",
+        "location": {
+            "address1": "706 Autopark Blvd",
+            "address2": "",
+            "address3": "",
+            "city": "West Chester",
+            "zip_code": "19382",
+            "country": "US",
+            "state": "PA",
+            "display_address": [
+                "706 Autopark Blvd",
+                "West Chester, PA 19382"
+            ]
+        },
+        "zip": "19382",
+        "rating": 3.5,
+        "url": "https://www.yelp.com/biz/scott-honda-of-west-chester-west-chester-3?adjust_creative=uHab1x2ltiv-YuDKEdMgzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=uHab1x2ltiv-YuDKEdMgzw"
+    },
+    {
+        "name": "Piazza Honda Of Springfield",
+        "location": {
+            "address1": "780 Baltimore Pike",
+            "address2": "",
+            "address3": "",
+            "city": "Springfield",
+            "zip_code": "19064",
+            "country": "US",
+            "state": "PA",
+            "display_address": [
+                "780 Baltimore Pike",
+                "Springfield, PA 19064"
+            ]
+        },
+        "zip": "19064",
+        "rating": 3,
+        "url": "https://www.yelp.com/biz/piazza-honda-of-springfield-springfield?adjust_creative=uHab1x2ltiv-YuDKEdMgzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=uHab1x2ltiv-YuDKEdMgzw"
+    },
+    {
+        "name": "Union Park Honda",
+        "location": {
+            "address1": "1704 Pennsylvania Ave",
+            "address2": "",
+            "address3": "",
+            "city": "Wilmington",
+            "zip_code": "19806",
+            "country": "US",
+            "state": "DE",
+            "display_address": [
+                "1704 Pennsylvania Ave",
+                "Wilmington, DE 19806"
+            ]
+        },
+        "zip": "19806",
+        "rating": 3,
+        "url": "https://www.yelp.com/biz/union-park-honda-wilmington?adjust_creative=uHab1x2ltiv-YuDKEdMgzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=uHab1x2ltiv-YuDKEdMgzw"
+    },
+    {
+        "name": "A&M Auto",
+        "location": {
+            "address1": "3701 Miller Rd",
+            "address2": null,
+            "address3": "",
+            "city": "Wilmington",
+            "zip_code": "19802",
+            "country": "US",
+            "state": "DE",
+            "display_address": [
+                "3701 Miller Rd",
+                "Wilmington, DE 19802"
+            ]
+        },
+        "zip": "19802",
+        "rating": 5,
+        "url": "https://www.yelp.com/biz/a-and-m-auto-wilmington?adjust_creative=uHab1x2ltiv-YuDKEdMgzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=uHab1x2ltiv-YuDKEdMgzw"
+    },
+    {
+        "name": "Foulk Road Automotive",
+        "location": {
+            "address1": "1801 Foulk Road",
+            "address2": "",
+            "address3": "",
+            "city": "Wilmington",
+            "zip_code": "19810",
+            "country": "US",
+            "state": "DE",
+            "display_address": [
+                "1801 Foulk Road",
+                "Wilmington, DE 19810"
+            ]
+        },
+        "zip": "19810",
+        "rating": 4.5,
+        "url": "https://www.yelp.com/biz/foulk-road-automotive-wilmington?adjust_creative=uHab1x2ltiv-YuDKEdMgzw&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=uHab1x2ltiv-YuDKEdMgzw"
+    }
+]
