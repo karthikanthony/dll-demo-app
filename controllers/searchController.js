@@ -28,13 +28,13 @@ var searchController = function () {
             });
         };
         
-        // var file = './data/test_data_business.json';
-        // jsonfile.readFile(file, function (err, obj) {
-        //     cb(obj);
-        // //   // console.dir(obj);
-        // });
+        var file = './data/test_data_business.json';
+        jsonfile.readFile(file, function (err, obj) {
+            cb(obj);
+        //   // console.dir(obj);
+        });
         
-        https.request(options, callback).end();
+        //https.request(options, callback).end();
     };
     
     var getRestaurants = function (location, type, cb) {
@@ -58,13 +58,13 @@ var searchController = function () {
             });
         };
         
-        // var file = './data/test_data_restaurants.json';
-        // jsonfile.readFile(file, function (err, obj) {
-        //     cb(obj);
-        // //   // console.dir(obj);
-        // });
+        var file = './data/test_data_restaurants.json';
+        jsonfile.readFile(file, function (err, obj) {
+            cb(obj);
+        //   // console.dir(obj);
+        });
         
-        https.request(options, callback).end();
+        //https.request(options, callback).end();
     };
     
     var getWeather = function (location, cb) {
@@ -83,13 +83,13 @@ var searchController = function () {
             });
         };
         
-        // var file = './data/test_data_currentWeather.json';
-        // jsonfile.readFile(file, function (err, obj) {
-        //     cb(obj);
-        //    // console.dir(obj);
-        // });
+        var file = './data/test_data_currentWeather.json';
+        jsonfile.readFile(file, function (err, obj) {
+            cb(obj);
+           // console.dir(obj);
+        });
         
-        https.request(options, callback).end();
+        //https.request(options, callback).end();
     };
     
     var getDirections = function (from, to, name, mode, cb) {
@@ -120,13 +120,13 @@ var searchController = function () {
             });
         };
         
-        // var file = './data/test_data_drivingDirections.json';
-        // jsonfile.readFile(file, function (err, obj) {
-        //     cb(obj);
-        //    // console.dir(obj);
-        // });
+        var file = './data/test_data_drivingDirections.json';
+        jsonfile.readFile(file, function (err, obj) {
+            cb(obj);
+           // console.dir(obj);
+        });
         
-        https.request(directionOptions, callback).end();
+        //https.request(directionOptions, callback).end();
     };
     
     var getManyDirections = function (from, restaurants, mode, cb) {
