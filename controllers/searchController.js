@@ -28,11 +28,11 @@ var searchController = function () {
             });
         };
         
-        //var file = './data/test_data_business.json';
-        //jsonfile.readFile(file, function (err, obj) {
-        //    cb(obj);
-        //   // console.dir(obj);
-        //});
+        // var file = './data/test_data_business.json';
+        // jsonfile.readFile(file, function (err, obj) {
+        //     cb(obj);
+        // //   // console.dir(obj);
+        // });
         
         https.request(options, callback).end();
     };
@@ -58,11 +58,11 @@ var searchController = function () {
             });
         };
         
-        //var file = './data/test_data_restaurants.json';
-        //jsonfile.readFile(file, function (err, obj) {
-        //    cb(obj);
-        //   // console.dir(obj);
-        //});
+        // var file = './data/test_data_restaurants.json';
+        // jsonfile.readFile(file, function (err, obj) {
+        //     cb(obj);
+        // //   // console.dir(obj);
+        // });
         
         https.request(options, callback).end();
     };
@@ -83,11 +83,11 @@ var searchController = function () {
             });
         };
         
-        //var file = './data/test_data_currentWeather.json';
-        //jsonfile.readFile(file, function (err, obj) {
-        //    cb(obj);
-        //   // console.dir(obj);
-        //});
+        // var file = './data/test_data_currentWeather.json';
+        // jsonfile.readFile(file, function (err, obj) {
+        //     cb(obj);
+        //    // console.dir(obj);
+        // });
         
         https.request(options, callback).end();
     };
@@ -120,11 +120,11 @@ var searchController = function () {
             });
         };
         
-        //var file = './data/test_data_drivingDirections.json';
-        //jsonfile.readFile(file, function (err, obj) {
-        //    cb(obj);
-        //   // console.dir(obj);
-        //});
+        // var file = './data/test_data_drivingDirections.json';
+        // jsonfile.readFile(file, function (err, obj) {
+        //     cb(obj);
+        //    // console.dir(obj);
+        // });
         
         https.request(directionOptions, callback).end();
     };
