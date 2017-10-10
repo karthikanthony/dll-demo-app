@@ -12,7 +12,8 @@ block content
                         a.story-title(href='#')
                         img.img-circle(alt='', src='http://sm.pcmag.com/pcmag_uk/guide/t/the-best-s/the-best-small-business-accounting-software-of-2017_97qm.jpg', style='width:100px;height:100px')            
                     .col-md-10.col-sm-9
-                        h3 HI! Where are you ? Please enter the zip code, and the kind of business you want to search for (e.g., “plumbers” or “Honda”). 
+                        h3 HI! Where are you ? Please enter the zip code, and the kind of business you want to search for (e.g., “plumbers” or “Honda”).
+                        br
                         .row
                             .col-xs-9
                                 form(action='/business',method='post')
@@ -25,12 +26,10 @@ block content
                                         span.input-group-addon
                                           i.glyphicon.glyphicon-lock
                                         input#business.form-control(type='text', name='business', placeholder='Business', required)
-                                       
-                                     input.btn.btn-info(type="submit", value="Submit")                            
-                             .col-xs-3
-                        br
-                   hr      
-                  
+                                        br
+                                      .input-group 
+                                        input.btn.btn-info(type="submit", value="Submit")                            
+
               // /stories
               a.btn.btn-primary.pull-right.btnNext(href='/') More 
                 i.glyphicon.glyphicon-chevron-right

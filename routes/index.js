@@ -14,7 +14,7 @@ var weather = {
 /* GET home page. */
 router.get('/', function (req, res) {
     res.render('home', {
-        title: 'Application - Home',
+        title: 'Home',
     });
 
 });
@@ -29,7 +29,7 @@ router.post('/business', function (req, res) {
             
             wdata.location = zipCode;
             res.render('businesses', {
-                title: 'application',
+                title: 'Business Search',
                 businesses: data,
                 weather: wdata
             });
@@ -68,7 +68,7 @@ router.get('/restaurants', function (req, res) {
                 searchController.directions(fromAddress, data, 'driving' , function (drives) {
                     
                     res.render('restaurantsView', {
-                        title: 'Application - Restaurants',
+                        title: 'Restaurants Search',
                         resturants: data,
                         weather: wdata,
                         name: businessName,

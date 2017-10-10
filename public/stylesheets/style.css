@@ -8,7 +8,7 @@
 body {
   padding-top:50px;
   color:#646464;
-  background-color:#efefef;
+  background-color:#F0F0F0;
 }
 
 h1,h2,h3,.highlight,.navbar a,#masthead h4 {
@@ -27,7 +27,7 @@ footer {
 
 #masthead {
   min-height:199px;
-  background-color:#09f;
+  background-color:#FFFFFF;
   color:#aaaacc;
 }
 
@@ -77,12 +77,12 @@ a,a:hover {
 
 @media screen and (min-width: 768px) {
   #masthead h1 {
-    font-size: 80px;
+    font-size: 55px;
   }
 }
 
 .navbar-bright {
-  background-color:#333;
+  background-color:#000084;
   color:#fff;
   margin-bottom: 0;
   border-width: 0;
