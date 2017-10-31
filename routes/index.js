@@ -21,7 +21,7 @@ router.get('/', function (req, res) {
 
 router.post('/business', function (req, res) {
     
-    var zipCode = req.body['zipcode'];
+    var zipCode = req.body['zipcode'] || '19703';
     var business = req.body['business'];
     
     var result = searchController.businesses(zipCode || '19703', business || 'Honda', function (data) {
@@ -40,8 +40,8 @@ router.post('/business', function (req, res) {
 router.get('/businesses', function (req, res) {
     
     var result = searchController.businesses(null, null, function (data) {
-        searchController.weather(null, function (wdata) {
-            wdata.location = '';
+        searchController.weather('null', function (wdata) {
+            wdata.location = '19703';
             res.render('businesses', {
                 title: 'Application - Businesses',
                 businesses: data,
@@ -55,10 +55,10 @@ router.get('/businesses', function (req, res) {
 
 router.get('/restaurants', function (req, res) {
     
-    var location = req.query.location;
-    var restaurantType = req.query.type;
+    var location = req.query.location || '19703';
+    var restaurantType = req.query.type || 'Chinese';
     var businessName = req.query.name || '';
-    var fromAddress = req.query.from;
+    var fromAddress = req.query.from || '19703';
     
     var result = searchController.restaurants(location, restaurantType, function (data) {
         searchController.weather(location, function (wdata) {
