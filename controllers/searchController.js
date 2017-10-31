@@ -3,17 +3,18 @@ var http = require('http');
 var jsonfile = require('jsonfile');
 
 var searchController = function () {
-    
+    var ca_api_key = '&apikey=l793ea757612c24f658fa3b2b6f998394b';
+    var ax_api_key = '&apikey=c1c6b7c0-7eec-4550-a4e2-ada12aa335eb';
     var options = {
-        host : 'dev.ca.com',
+        host : '52.10.48.208',
         port: '8080',
-        method: 'GET',
-        rejectUnauthorized: false
+        method: 'GET'
+        //rejectUnauthorized: false
     };
     
     var getBusinesses = function (location, type, cb) {
         
-        options.path = '/demo/business-search?location=' + (location || '19703') + '&type=' + (type || 'honda') + '&apikey=c1c6b7c0-7eec-4550-a4e2-ada12aa335eb';
+        options.path = '/demo/business-search?location=' + (location || '19703') + '&type=' + (type || 'honda') + ca_api_key;
         
         var callback = function (response) {
             response.setEncoding("utf8");
@@ -34,12 +35,12 @@ var searchController = function () {
         //   // console.dir(obj);
         });*/
         
-        https.request(options, callback).end();
+        http.request(options, callback).end();
     };
     
     var getRestaurants = function (location, type, cb) {
         
-        options.path = '/demo/business-search?location=' + (location || '19703') + '&type=' + (type || 'chinese') + '&apikey=c1c6b7c0-7eec-4550-a4e2-ada12aa335eb';
+        options.path = '/demo/business-search?location=' + (location || '19703') + '&type=' + (type || 'chinese') + ca_api_key;
         
         console.log('enter get restaurants');
         
@@ -64,12 +65,12 @@ var searchController = function () {
         //   // console.dir(obj);
         });*/
         
-        https.request(options, callback).end();
+        http.request(options, callback).end();
     };
     
     var getWeather = function (location, cb) {
         
-        options.path = '/demo/weather-info?zip=' + (location || '19703');
+        options.path = '/demo/weather-info?zip=' + (location || '19703') + ca_api_key;
         
         var callback = function (response) {
             response.setEncoding("utf8");
@@ -89,18 +90,20 @@ var searchController = function () {
            // console.dir(obj);
         });
         */
-        https.request(options, callback).end();
+        http.request(options, callback).end();
     };
     
     var getDirections = function (from, to, name, mode, cb) {
         
-        var path = '/demo/map-info?destination=' + encodeURIComponent(to) + '&origin=' + encodeURIComponent(from) + '&mode=' + (mode || 'walking');
+        var path = '/demo/map-info?destination=' + encodeURIComponent(to) + '&origin=' + encodeURIComponent(from) + '&mode=' + (mode || 'walking') + ca_api_key;
+        
+        console.log('got directions');
         
         var directionOptions = {
-            host : 'axwaygw.apifirst.net',
-            port: '8065',
+            host : '52.10.48.208',
+            port: '8080',
             method: 'GET',
-            rejectUnauthorized: false,
+            //rejectUnauthorized: false,
             path : path
         };
         
@@ -126,7 +129,7 @@ var searchController = function () {
            // console.dir(obj);
         });*/
         
-        https.request(directionOptions, callback).end();
+        http.request(directionOptions, callback).end();
     };
     
     var getManyDirections = function (from, restaurants, mode, cb) {
