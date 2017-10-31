@@ -5,8 +5,8 @@ var jsonfile = require('jsonfile');
 var searchController = function () {
     
     var options = {
-        host : 'axwaygw.apifirst.net',
-        port: '8065',
+        host : 'dev.ca.com',
+        port: '8080',
         method: 'GET',
         rejectUnauthorized: false
     };
